@@ -135,7 +135,7 @@ class Instance(object):
             if event.name == "resize":
                 # Still don't quite know how to get the starting flavor and the ending one
                 # but we seemed to have gotten zero resizes in a year.
-                raise Exception()
+                continue
 
         if self.deleted_at and not delete_action_found:
             self.no_delete_action = True
